@@ -2,6 +2,7 @@ var colors = require('colors');
 var Stream = require('stream').Stream;
 
 module.exports = (options) => {
+  options = options || {};
   var color = options.color || 'cyan';
   if (! color in colors.styles) {
     color = 'cyan';
